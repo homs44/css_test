@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a, button {
+                display: block;
+            }
+            /* 마우스가 해당 요소 위로 올라왔을 때 */
+            #hover:hover{
+                color:green;
+                font-weight: 800;
+            }
+
+            /* 해당 요소가 active 상태일 때 button을 기준으로 클릭됬을 때 */
+            #active:active{
+                color:green;
+                font-weight: 800;
+            }
+            /* 
+                해당 요소가 focus 상태일 때,
+                탭을 사용해서 해당 요소가 focus되거나
+                클릭한 이후 해당 요소가 focus되었을 때
+            */
+            #focus:focus{
+                color:green;
+                font-weight: 800;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="hover">hover</div>
+        <button id="active"> active </button>
+        <button id="focus"> focus </button>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        article {
+            padding: 16px;
+            margin: 8px;
+        }
+
+        .africa>article {
+            background-color: #acc6aa;
+            color: #eee;
+        }
+
+        article>h1::first-letter {
+            font-size: 40px;
+        }
+        
+        .europe>article {
+            background-color: #10316b;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        article 은 margin:8px; padding:16px; 
+        article 제목의 첫번째 글자를 font-size:40px;
+        africa 관련된 article background-color:#acc6aa;color:#eee;
+        europe 관련된 article background-color:#10316b;color:#fff;
+    -->
+    <section>
+        <section class="africa">
+            <article id="d0691f02-a650-463d-b393-23a9bbe2b8ba">
+                <h1>
+                    Venezuela border closes amid aid stand-off
+                </h1>
+                <p>
+                    Venezuela has said that its border with Colombia has been partially closed, shortly after opposition
+                    leader Juan Guaidó defied a travel ban to cross it.
+                </p>
+            </article>
+
+            <article id="e5dbf33d-f9f6-4e4f-be75-67cb7f4c8928">
+                <h1>Sudan's Omar al-Bashir declares state of emergency</h1>
+                <p>
+                    Sudan's President Omar al-Bashir has declared a national state of emergency, dismissed the federal
+                    government and sacked all state governors.
+
+                </p>
+            </article>
+        </section>
+        <section class="europe">
+            <article>
+                <h1>Brexit: Greg Clark, Amber Rudd and David Gauke issue delay warning</h1>
+                <p>
+                    Brexit should be delayed if Parliament does not approve a deal in the coming days, three cabinet
+                    ministers have warned publicly for the first time.
+
+                </p>
+            </article>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            /* 후손 및 자손 태그 예시 */
+            #a>ol>li {
+                color:gray;
+            }
+            #b {
+                color:red;
+            }
+            div p {
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="a">
+                <ol>
+                    <li>회색으로(gray)</li>
+                    <li>회색으로(gray)</li>
+                </ol>
+            </div>
+            <div>
+                <div>
+                    <div id="b">빨강색으로(red)</div>
+                    <p>
+                        파란색으로(blue)
+                    </p>
+                </div>
+                <p>
+                        파란색으로(blue)
+                </p>    
+            </div>
+        </div>
+    </body>
+</html>

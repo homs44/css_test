@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* 형제 태그 중 p태그 [바로] 다음에 있는 ul 태그 */
+            p + ul {
+                color:red;
+            }
+            /* 형제 태그 중 p 태그 다음에 오는 모든 ul 태그 */
+            p ~ ul {
+                background-color:gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div>A div element</div>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <p>The first paragraph</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <h2>Another list</h2>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <div>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+    </body>
+</html>

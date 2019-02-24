@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a, button {
+                display: block;
+            }
+            /* p요소 안에 있는 첫번째 글자 */
+            p::first-letter{
+                font-size:3em;
+            }
+            /* p요소 안에 있는 첫번째 줄 */
+            p::first-line{
+                background: #DEDEDE;
+            }
+            /* p요소 안에 있는 내용 드래그 해서 선택 됬을 때 */
+            p::selection{
+                background: green;
+            }
+
+            /* p요소 앞에 추가 되는 내용 보통 content랑 함께 쓴다. */
+            p::before {
+                content:"Before!!!";
+                color:blue;
+            }
+
+            /* p요소 앞에 뒤에 되는 내용 보통 content랑 함께 쓴다. */
+            p::after {
+                content:"After!!!";
+                color:crimson;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>
+            First line<br>
+            Second line<br>
+        </p>
+    </body>
+</html>

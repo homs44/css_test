@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* id가 test인 요소 자손인 p 요소 */
+            #test p {
+                color:red;
+            }
+            
+            /* id가 test인 자식 요소 중 p 요소 */
+            #test>p {
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <div>
+            <p>paragraph</p>
+        </div>
+        <div id="test">
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <span><p>paragraph 3</p></span>
+        </div>
+        <p>
+            paragraph4
+        </p>
+
+    </body>
+</html>

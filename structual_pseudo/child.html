@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a, button {
+                display: block;
+            }
+            /* p 중에 첫번째 자식 요소 */
+            p:first-child {
+                color:crimson;
+            }
+            /* p 중에 마지막 자식 요소 */
+            p:last-child {
+                color:blue;
+            }
+            /* li 중에 (2n+1) 번째에 해당하는 자식 요소 */
+            li:nth-child(2n+1){
+                color:crimson;
+            }
+            /* li 중에 뒤에서 (2n+1) 번째에 해당하는 자식 요소 */
+            li:nth-last-child(2n+1){
+                color:blue;
+            }
+
+        </style>
+    </head>
+    <body>
+       <p>This is paragraph</p>
+       <h1>This is title</h1>
+       <p>This is paragraph</p>
+       <div>
+            <p>This is paragraph</p>
+            <p>This is paragraph</p>
+       </div>
+       <ul>
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+           <li>4</li>
+           <li>5</li>
+           <li>6</li>
+       </ul>
+
+    </body>
+</html>

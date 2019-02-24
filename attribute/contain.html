@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <style>
+       
+        /* div 태그의 class 속성에 test가 포함되어 있는 경우 */
+        div[class*="test"] {
+            color: red;
+        }
+        /* div 태그의 class 속성에 test(공백으로 분리)가 포함되어 있는 경우 */
+        div[class~="test"] {
+            background-color: yellow;
+        }
+    </style>
+
+    <div class="first_test"> The first div element.</div>
+    <div class="second"> The first div element.</div>
+    <div class="test"> The first div element.</div>
+    <p class="test"> The first div element.</p>
+
+</body>
+
+</html>

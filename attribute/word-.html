@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <style>
+       
+        /* 
+            p 태그에 lang 속성에 en이라는 단어( 공백으로 분리 )가 있거나
+            en-로 시작하는 단어
+        */
+        p[lang|="en"] {
+            color: red;
+        }
+    </style>
+
+    <p lang="en"> Hello!</p>
+    <p lang="enus"> Hi!</p>
+    <p lang="en-us"> Hi!</p>
+    <p lang="en-gb"> Ello!</p>
+    <p lang="no"> Hei!</p>
+
+</body>
+
+</html>

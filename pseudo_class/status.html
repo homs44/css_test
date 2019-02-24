@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* 셀렉터가 enabled일 때 바로 다음에 있는 요소가 span 일 경우 */ 
+            input:enabled + span {
+                color:blue;
+                font-weight: 800;
+            }
+
+            /* 셀렉터가 disabled일 때 바로 다음에 있는 요소가 span 일 경우 */ 
+            input:disabled + span {
+                color:black;
+                font-weight: 800;
+            }
+
+            /* 셀렉터가 checked 때 바로 다음에 있는 요소가 span 일 경우 */ 
+            input:checked + span {
+                color:crimson;
+                font-weight: 800;
+            }
+
+        </style>
+    </head>
+    <body>
+        <input type="radio" name="gender"><span>Male</span><br>
+        <input type="radio" name="gender"><span>Femail</span><br>
+        <input type="radio" disabled  name="gender" ><span>Neuter</span><br>
+        <br>
+        <br>
+        <input type="checkbox" name="gender"><span>Male</span><br>
+        <input type="checkbox" name="gender"><span>Femail</span><br>
+        <input type="checkbox" disabled  name="gender" ><span>Neuter</span><br>
+    </body>
+</html>
